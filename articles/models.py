@@ -9,6 +9,8 @@ class Articles(models.Model):
 
     def __str__(self):
         return self.title
+    def snippt(self):
+        return self.body[:50]
 
 
 
